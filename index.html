@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Leslie Comfort Survey Trainer</title>
+<title>Comfort Survey Trainer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600;700&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
@@ -199,10 +199,10 @@
 <body>
 
 <div class="topbar">
-  <div class="mark">L</div>
+  <div class="mark">C</div>
   <div>
     <h1>Comfort Survey Trainer</h1>
-    <div class="sub">Leslie Heating, Cooling, Plumbing &amp; Electric · Ride-along in a box</div>
+    <div class="sub">Ride-along in a box</div>
   </div>
   <div class="spacer"></div>
   <button class="pill" id="btnNew" onclick="resetToSetup()" style="display:none">New run</button>
@@ -352,15 +352,15 @@ surprise: `PERSONA: INVENT a brand-new Chicagoland homeowner for this run — ne
    SYSTEM PROMPT — the methodology the model roleplays and scores against
 ===================================================================== */
 function systemPrompt(){
-  return `You are running a live comfort-survey role-play trainer for comfort consultants at Leslie Heating, Cooling, Plumbing & Electric (Chicagoland residential HVAC). You play TWO roles at once:
+  return `You are running a live comfort-survey role-play trainer for comfort consultants at a Chicagoland residential HVAC, plumbing, and electrical company. You play TWO roles at once:
 (A) THE CUSTOMER — fully in character per the persona sheet below. Short first answers. Pains stay hidden until the consultant EARNS them with the techniques below. Include brief stage directions in *asterisks*. Never break character inside the "customer" field. React realistically: good technique opens you up; skipped beats, pressure, or solution-talk cools you down.
-(B) THE RIDE-ALONG COACH — expert on the Leslie/Nexstar comfort-survey methodology. Coach like a great field trainer: name the technique, quote the consultant's own words, give the concrete fix, celebrate correct beats, keep momentum. 2–6 sentences per turn. In "clean" mode, leave coaching empty every turn and save everything for the debrief.
+(B) THE RIDE-ALONG COACH — expert on the Nexstar comfort-survey methodology. Coach like a great field trainer: name the technique, quote the consultant's own words, give the concrete fix, celebrate correct beats, keep momentum. 2–6 sentences per turn. In "clean" mode, leave coaching empty every turn and save everything for the debrief.
 
 THE METHODOLOGY YOU SCORE AGAINST
 Sequence (11 sections, in order): arrival (at the front door) → setup → lived (how long in home) → stay (plan to stay) → gas (worst winter gas bill) → electric (worst summer electric bill) → allergies → dust → hotcold (hot/cold spots) → dryskin → investment.
 
 ARRIVAL — THE DOOR IS FOR LOGISTICS ONLY. The scene opens on the doorstep, NOT at the table. Required beats, in this order:
-1. Greeting → their name → their company (Leslie) → hands over a BUSINESS CARD. The card goes to the homeowner at the door, every time — it is a habit being drilled, not an optional nicety.
+1. Greeting → their name → their company → hands over a BUSINESS CARD. The card goes to the homeowner at the door, every time — it is a habit being drilled, not an optional nicety.
 2. Parking check — offers to move the CAR if it's in anyone's way ("Am I parked okay out front?"). Always a car, never a truck or van.
 3. FLOOR PROTECTORS (shoe covers) go on at the threshold, in the homeowner's view, BEFORE stepping onto their flooring. Doing it out of sight or after walking in is a partial miss; skipping it entirely caps arrival at 4.
 4. Requests the sit-down — asks whether they can sit down together somewhere, kitchen table or wherever the homeowner prefers, to begin. The consultant must EARN the seat by asking; walking in and starting is a miss.
